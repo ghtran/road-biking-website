@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the exciting world of road biking, from its benefits to tips and gear recommendations.">
+    <title>Road Biking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header role="banner">
+        <h1>Welcome to the World of Road Biking</h1>
+        <nav role="navigation">
+            <div class="menu-toggle">
+                <span>☰</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li>
+                    <a href="#">Resources</a>
+                    <ul class="dropdown">
+                        <li><a href="#cycling-tips">Cycling Tips</a></li>
+                        <li><a href="#gears">Gears</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <div class="grid-container">
+            <section class="grid-item">
+                <h2>Why Choose Road Biking</h2>
+                <ul>
+                    <li>Improved Cardiovascular Health</li>
+                    <li>Increased Leg Strength</li>
+                    <li>Stress Relief</li>
+                </ul>
+            </section>
+
+            <section class="grid-item">
+                <h2>Popular Cycling Events</h2>
+                <ol>
+                    <li>Tour de France
+                        <img src="https://www.happy.rentals/admin/uploads/Event-323-96401.jpg" alt="Tour de France event" width="300">
+                    </li>
+                    <li>Giro d'Italia
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/primoz-rogli-c4-8d-of-slovenia-and-team-jumbo-visma-pink-leader-news-photo-1713813651.jpg" alt="Giro d'Italia event" width="300">
+                    </li>
+                    <li>Vuelta a España
+                        <img src="https://nbcsports.brightspotcdn.com/dims4/default/e64fe9d/2147483647/strip/true/crop/1835x1032+0+95/resize/1440x810!/format/webp/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2F07%2Fed%2F5d4e7db84656aa1fd0d71eae3e81%2Fhttps-delivery-gettyimages.com%2Fdownloads%2F1684799371" alt="Vuelta a España event" width="300">
+                    </li>
+                </ol>
+            </section>
+
+            <!-- Bike Types Table Section -->
+            <section class="grid-item">
+                <h2>Bike Types</h2>
+                <table class="bike-types-table">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Feature</th>
+                            <th>Best For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Racing Bikes</td>
+                            <td>Lightweight, aerodynamic</td>
+                            <td>Speed enthusiasts</td>
+                        </tr>
+                        <tr>
+                            <td>Endurance Bikes</td>
+                            <td>Comfortable geometry for long rides</td>
+                            <td>Endurance cycling</td>
+                        </tr>
+                        <tr>
+                            <td>Touring Bikes</td>
+                            <td>Sturdy, designed to carry essentials</td>
+                            <td>Long-distance touring</td>
+                        </tr>
+                        <tr>
+                            <td>Gravel Bikes</td>
+                            <td>Durable, adaptable for varied terrains</td>
+                            <td>Mixed-surface rides</td>
+                        </tr>
+                        <tr>
+                            <td>Mountain Bikes</td>
+                            <td>Wide tires, shock absorption</td>
+                            <td>Off-road trails</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="grid-item" id="gears">
+                <h2>Gears You Need to Get Started</h2>
+                <ul>
+                    <li>Helmet</li>
+                    <li>Cycling Shorts</li>
+                    <li>Water Bottles</li>
+                </ul>
+            </section>
+
+            <section class="grid-item" id="cycling-tips">
+                <h2 id="cycling-tips">Cycling Tips</h2>
+                <p>Check out these tips to enhance your cycling experience:</p>
+                <ul>
+                    <li>Maintaining proper riding posture</li>
+                    <li>Staying hydrated</li>
+                    <li>Having the proper fuel</li>
+                </ul>
+                <p>For more tips, <a href="#cycling-tips">click here</a>.</p>
+            </section>
+        </div>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <fieldset>
+                        <legend>Are you a road biker?</legend>
+                        <label><input type="radio" name="biker" value="yes"> Yes</label>
+                        <label><input type="radio" name="biker" value="no"> No</label>
+                    </fieldset><br>
+
+                    <label for="experience">Cycling Experience:</label>
+                    <select id="experience" name="experience">
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                        <option value="pro">Professional</option>
+                        <option value="none">None</option>
+                    </select><br><br>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 Road Biking. All rights reserved.</p>
+        <a href="#" class="return-to-top">Return to top</a>
+    </footer>
+
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector(".nav-links").classList.toggle("show");
+        });
+
+        // Smooth scroll for return to top
+        document.querySelector('.return-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
